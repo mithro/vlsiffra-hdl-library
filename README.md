@@ -43,4 +43,19 @@ Currently supported process technologies are;
  * `asap7`
 
 
+# TODO List
+
+### In progress
+
+ * Yosys techmap file generation.
+ * Running characterization of each cells.
+
+### Yet to be started
+
+ * Add support for;
+   * Signed addition.
+   * Addition with different sized inputs.
+   * Subtraction.
+
+
 
