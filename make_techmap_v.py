@@ -46,10 +46,12 @@ module _map_add(A, B, Y);
     genvar i;
     generate
         if (A_WIDTH == 2)
+            /* Map 2-bit wide adder */
             add_b02 _TECHMAP_REPLACE_ (.a(A), .b(B), .o(Y));""")
     for i in range(3, 64):
         f.write("""
         else if (A_WIDTH == {i})
+            /* Map {i}-bit wide adder */
             add_b{i:02} _TECHMAP_REPLACE_ (.a(A), .b(B), .o(Y));""".format(i=i))
     f.write("""
     endgenerate
