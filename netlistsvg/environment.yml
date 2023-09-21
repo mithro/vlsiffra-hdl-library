@@ -1,0 +1,11 @@
+name: netlistsvg
+channels:
+- LiteX-Hub # https://github.com/hdl/conda-eda
+- conda-forge
+- defaults
+dependencies:
+- docutils
+- graphviz      # Needed for dot
+- netlistsvg
+- nodejs
+- yosys
