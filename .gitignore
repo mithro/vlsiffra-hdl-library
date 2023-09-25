@@ -1,0 +1,4 @@
+netlistsvg/env/
+tests/*.svg
+tests/*.json
+tests/config.*.tcl
